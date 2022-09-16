@@ -57,12 +57,12 @@
         </div>
 
         <div id="blue-light"></div>
+        <!-- Has to be wrapped up in 2 divs  to not overflow, its the only way i figured out -->
         <div class="big-div">
           <div class="red-dot">
-            <div id="red-light"></div>
+            <div id="red-light"></div>ß
           </div>
         </div>
-        
         
       </div>
     </div>
@@ -74,20 +74,22 @@
 
     <div id="dark-box" class="center">
 
-      <div id="black-overlay-video" class="img-card">
-        <h3>Video cameras</h3>
-      </div>
-
-      <div class="img-card">
-        <div id="black-overlay">
-          <h3>Lenses</h3>
+      <div id="img-video" class="img-card">
+        <div class="dark-overlay">
+          <h3 class="black">Video cameras</h3>
         </div>
       </div>
 
-      <div class="img-card">
-        <div id="black-overlay">
-          <h3>Accessories</h3>
-        </div>
+      <div id="img-lens" class="img-card">
+          <div class="dark-overlay">
+            <h3 class="black">Lenses</h3>
+          </div>
+      </div>
+
+      <div id="img-accessories" class="img-card">
+          <div class="dark-overlay">
+            <h3 class="white">Accessories</h3>
+          </div>
       </div>
 
     </div>
