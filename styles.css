@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    width: 68,75%;
+    max-width: 1320px;
+    display: flex;
+    flex-direction: column;
+    /* need to use these to to have more similar font apperance as in Figma === potential blog article? */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#hero-camera-upper {
+    display: none;
+}
+
+#blank_space {
+    height: 160px;
+}
+
+#blue-light {
+    position: absolute;
+    width: 145px;
+    height: 164px;
+    left: -70px;
+    top: 120px;
+
+    background: rgba(46, 64, 228, 0.55);
+    filter: blur(75px);
+}
+
+#red-light {
+    position: absolute;
+    width: 164px;
+    height: 153px;
+    left: 295px;
+    top: 354px;
+
+    background: rgba(223, 48, 88, 0.45);
+    filter: blur(50px);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 6px 0 8px 0;
+}
+
+.main h1 {
+    padding: 0 15px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100%;
+}
+
+#header-img {
+    width: 20px;
+    cursor: pointer;
+}
+
+#name {
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-bar {
+    margin: 6px 15% 0 15%;
+}
+
+#nav-bar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+#nav-bar ul li a  {
+    list-style: none;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 110%;
+}
+
+.btn {
+    padding: 8px 20px 9px 20px;
+    border-radius: 60px;
+    border: 1px solid white;
+    color: black;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-camera-lower {
+    margin: 30px 0;
+    height: 305px;
+    width: 170%;
+    object-fit: cover;
+}
+
+.img-card {
+    background-color: burlywood;
+}
+
+p {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 110%;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: justify;
+}
