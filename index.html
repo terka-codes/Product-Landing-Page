@@ -22,7 +22,7 @@
     <img id="header-img" src="./Images/bolt-solid 1.svg" alt="bolt icon" width="20" href="#about">
     <a id="name" href="#about">Pikson</a>
   </div>
-  <nav id="nav-bar">
+  <nav id="nav-bar" class="center">
     <ul>
       <li><a class="nav-link" href="#">Lenses</a></li>
       <li><a class="nav-link" href="#">Video Cameras</a></li>
@@ -51,11 +51,19 @@
         <div class="center">
           <button type="button" id="learn-more-btn" class="btn" href="#">Learn more</button>
 
-          <img id="hero-camera-lower" src="./Images/pexels-achim-f-3526906.jpg" alt="camrea">
+          <div class="hero-camera-lower center">
+          </div>
+          
         </div>
 
         <div id="blue-light"></div>
-        <div id="red-light"></div>
+        <div class="big-div">
+          <div class="red-dot">
+            <div id="red-light"></div>
+          </div>
+        </div>
+        
+        
       </div>
     </div>
   </div>
@@ -64,12 +72,10 @@
   <div id="what-we-offer" class="center">
     <h1>What we offer:</h1>
 
-    <div id="dark-box">
+    <div id="dark-box" class="center">
 
-      <div class="img-card">
-        <div id="black-overlay">
-          <h3>Video cameras</h3>
-        </div>
+      <div id="black-overlay-video" class="img-card">
+        <h3>Video cameras</h3>
       </div>
 
       <div class="img-card">
@@ -83,7 +89,7 @@
           <h3>Accessories</h3>
         </div>
       </div>
-      
+
     </div>
 
   </div>
@@ -172,7 +178,7 @@
         </div>
         <div id="name-box">
           <label>What should we call you?</label>
-          <input id="name" type="name" name="name" placeholder="John Snow">
+          <input id="your-name" type="name" name="name" placeholder="John Snow">
         </div>
         <div id="text-box">
           <label>What should we call you?</label>
