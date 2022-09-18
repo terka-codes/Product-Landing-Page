@@ -81,7 +81,7 @@ header {
     backdrop-filter: blur(10px);
 }
 
-.main h1 {
+h1 {
     padding: 0 15px;
     font-weight: 600;
     font-size: 36px;
@@ -136,8 +136,9 @@ p {
     margin: 15px;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 200;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 110%;
+    text-align: justify;
 }
 
 .btn {
@@ -245,22 +246,102 @@ p {
     color: black;
 }
 
-#dark-box h3s.white {
+#dark-box h3.white {
     color: white;
 }
 
-p {
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 110%;
-    color: rgba(255, 255, 255, 0.7);
+.title {
+    margin: 25px 0;
+}
+
+select {
+    padding: 5px 5px;
+    color: #FFFFFF;
+    background: #000000;
+    border: 1px solid #FFFFFF;
+    margin: 15px;
+    height: 40px;
+    width: calc(100% - 30px);
     text-align: justify;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.img-body {
+    margin: auto;
+    width: calc(100% - 50px);
+    background-position: center center;
+}
+
+#lens-image {
+    background-image: url(./Images/pexels-garrett-morrow-2179865.jpg);
+    box-shadow: inset 0px 50px 50px #000000;
+    width: 270px;
+    height: 277.5px;
+    background-size: 300px auto;
+    border-radius: 50% 50% 49% 51% / 92% 92% 8% 8%;
+}
+
+#camera-img {
+    background-image: url(./Images/pexels-santschi-films-4243663.jpg);
+    width: 280px;
+    height: 250px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background-size: 430px auto;
+}
+
+#gimball-img {
+    background-image: url(./Images/DJI\ gimbal.png);
+    width: 190px;
+    height: 306px;
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    margin: 50px auto;
+}
+
+.links {
+    margin: auto;
+    width: calc(100% - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+.accessories-category {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.div-links {
+    padding: 12px 10px 11px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.div-links:hover {
+    color: #FFFFFF;
+    padding: 12px 13px 11px 13px;
+    cursor: pointer;
+    background: #242424;
+    border: 1px solid #242424;
+    transition: 0.3s;
+}
+
+.accessories-category:hover {
+    color: #FFFFFF;
+    transition: 0.15s;
 }
 
 iframe {
-    width: 100%;
+    margin: 15px;
     aspect-ratio: 16/9;
-
+    text-align: center;
+    width: calc(100% - 30px);
 }
 
 #your-name, #subject, #email {
@@ -272,4 +353,12 @@ iframe {
     line-height: 110%;
     color: rgba(255, 255, 255, 0.7);
     background-color: black;
+}
+
+#wine-div {
+    background: #521826;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 682px;
 }

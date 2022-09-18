@@ -98,36 +98,43 @@
 
   <!-- third element starts here -->
   <div id="lenses">
+
     <div class="flex left">
       <div class="content">
-        <h1>Lenses</h1>
+
+        <h1 id="lens-title" class="cente title">Lenses</h1>
+
         <div class="text">
           <p>You can choose from a variety of our lenses and rent them for up to a month!</p>
           <p>We provide lenses from every major brand, so suit your Canon, Nikon, Fujifilm, and Sony camera.</p>
           <p>Our lenses are thoughtfully inspected before and after every customer to ensure the best quality. </p>
           <p>Our staff will also explain how to use the lenses to prevent damaging your camera or our lens. </p>
-          <select name="lens-selection" id="lens-selection">
+
+          <select name="lens-selection" id="lens-selection" class="center">
             <option value="">Select a lense...</option>
             <option value="Canon">Canon</option>
             <option value="Nikon">Nikon</option>
             <option value="Sony">Sony</option>
           </select>
+
         </div>
       </div>
-      <img src="./Images/pexels-garrett-morrow-2179865.jpg" alt="lense" width="200">
+      <div id="lens-image" class="img-body"></div>
     </div>
   </div>
+
   <!-- 4th element starts here -->
   <div id="video-cameras">
     <div class="flex right">
       <div class="content">
-        <h1>Video cameras</h1>
+        <h1 class="title">Video cameras</h1>
         <div class="text">
           <p>You can choose from a variety of our video cameras and rent them for up to a month!</p>
           <p>We provide video cameras from every major brand, from professional cameras such as Red to more consumer-friendly ones such as Canon, Nikon, Fujifilm, and Sony.
           </p>
           <p>Our video cameras are thoughtfully inspected before and after every customer to ensure the best quality. </p>
           <p>Our staff will also explain how to use the lenses to prevent the video camera damage. </p>
+
           <select name="video-selection" id="video-selection">
             <option value="">Select a Video Camera...</option>
             <option value="RED">RED</option>
@@ -137,36 +144,57 @@
           </select>
         </div>
       </div>
-      <img src="./Images/pexels-santschi-films-4243663.jpg" alt="video camera" width="200">
+
+      <div id="camera-img" class="img-body"></div>
+      <!-- <img src="./Images/pexels-santschi-films-4243663.jpg" alt="video camera" width="200"> -->
     </div>
   </div>
+
   <!-- 5th element starts here -->
   <div id="accessories">
     <div class="flex left">
       <div class="content">
-        <h1>Accessories</h1>
+        <h1 class="title">Accessories</h1>
         <div class="text">
           <p>We provide a wide range of accessories for your cameras and video cameras.</p>
           <p>From external flashes, filters for your lenses for things such as memory cards, and hubs to connect them to even batteries.</p>
           <p>We know some of you may need multiple batteries or external displays only a few times a year, so it's better to rent them than pay the cost of the new goods and then take care of them when not using them.</p>
           <p>Newly we also rent gimbals and tripods for cameras, video cameras, and phones. </p>
+          
           <div class="links">
-            <a class="accessories-category" href="#">Memory Cards</a>
-            <a class="accessories-category" href="#">Gimbals</a>
-            <a class="accessories-category" href="#">Filters</a>
-            <a class="accessories-category" href="#">Flashes</a>
-            <a class="accessories-category" href="#">Batteries</a>
-            <a class="accessories-category" href="#">Hubs</a>
-            <a class="accessories-category" href="#">Tripods</a>
+            <div class="div-links" href="#">
+              <a class="accessories-category">Memory Cards</a>
+            </div>
+            <div class="div-links" href="#">
+              <a class="accessories-category">Gimbals</a>
+            </div>
+            <div class="div-links" href="#">
+              <a class="accessories-category">Filters</a>
+            </div>
+            <div class="div-links" href="#">
+              <a class="accessories-category">Flashes</a>
+              </div>
+            <div class="div-links" href="#">
+              <a class="accessories-category">Batteries</a>
+            </div>
+            <div class="div-links" href="#">
+              <a class="accessories-category">Hubs</a>
+            </div>
+            <div class="div-links" href="#">
+              <a class="accessories-category">Tripods</a>
+            </div>
           </div>
+
         </div>
       </div>
-      <img src="./Images/DJI gimbal.png" alt="Gimbal" width="200">
+
+      <div id="gimball-img" class="img-body"></div>
+      <!-- <img src="./Images/DJI gimbal.png" alt="Gimbal" width="200"> -->
     </div>
   </div>
 
  <!-- video here -->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/5bHaYAq19b4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/5bHaYAq19b4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  <!--contact form here -->
  <div id="contact-us">
