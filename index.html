@@ -110,7 +110,7 @@
           <p>Our lenses are thoughtfully inspected before and after every customer to ensure the best quality. </p>
           <p>Our staff will also explain how to use the lenses to prevent damaging your camera or our lens. </p>
 
-          <select name="lens-selection" id="lens-selection" class="center">
+          <select name="lens-selection" id="lens-selection" class="center" aria-label="Here you can selet a lense">
             <option value="">Select a lense...</option>
             <option value="Canon">Canon</option>
             <option value="Nikon">Nikon</option>
@@ -135,7 +135,7 @@
           <p>Our video cameras are thoughtfully inspected before and after every customer to ensure the best quality. </p>
           <p>Our staff will also explain how to use the lenses to prevent the video camera damage. </p>
 
-          <select name="video-selection" id="video-selection">
+          <select name="video-selection" id="video-selection" aria-label="Here you can selet a lense">
             <option value="">Select a Video Camera...</option>
             <option value="RED">RED</option>
             <option value="Canon">Canon</option>
@@ -197,27 +197,33 @@
   <iframe src="https://www.youtube.com/embed/5bHaYAq19b4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  <!--contact form here -->
- <div id="contact-us">
-    <h2>Couldn't find what you wanted?<br />or<br />Do you want to borrow more equipment at one?</h2>
-    <div class="contact-box"> <!-- probably use grid? Wait itśs all designed on a grid, lol-->
-      <h1 id="contact">CONTACT US</h1>
-      <form class="contact" id="form" action="https://www.freecodecamp.com/email-submit">
-        <div id="email-box">
-          <labe>Email:</labe>
-          <input id="email" type="email" name="email" placeholder="your.email@example.com">
-        </div>
-        <div id="name-box">
-          <label>What should we call you?</label>
-          <input id="your-name" type="name" name="name" placeholder="John Snow">
-        </div>
-        <div id="text-box">
-          <label>What should we call you?</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        </div>
-        <input id="submit" type="submit" value="Submit">
-      </form>
+  <div id="contact-us">
+    <div id="wine-ombre">
+      <h2>Couldn't find what you wanted?<br />or<br />Do you want to borrow more equipment at one?</h2>
+    </div>
+    
+    <div id="wine-div">
+      <div class="contact-box"> <!-- probably use grid? Wait itśs all designed on a grid, lol-->
+        <h1 id="contact">CONTACT US</h1>
+        <form class="contact" id="form" action="https://www.freecodecamp.com/email-submit">
+          <div id="email-box">
+            <labe>Email:</labe>
+            <input id="email" type="email" name="email" placeholder="your.email@example.com">
+          </div>
+          <div id="name-box">
+            <label>What should we call you?</label>
+            <input id="your-name" type="name" name="name" placeholder="John Snow">
+          </div>
+          <div id="text-box">
+            <label>What should we call you?</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </div>
     </div>
   </div>
+
   <div id="footer">
     <p>Webpage designed and coded by @TerkaCodes.</p>
   </div>

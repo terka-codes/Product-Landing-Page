@@ -357,8 +357,28 @@ iframe {
 
 #wine-div {
     background: #521826;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 682px;
+}
+
+#wine-ombre {
+    background: radial-gradient(126.99% 126.99% at 50% 126.99%, #521826 53.12%, #2E0D15 84.9%, #000000 100%);
+}
+
+#wine-ombre > h2 {
+    padding: 25px 18px 43px 18px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #C36E83;
+}
+
+#contact {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 115%;
+    display: flex;
+    text-decoration: underline;
+}
+
+#form {
+    padding: 0 15px;
 }
