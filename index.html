@@ -1,241 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pikson - Rent Camera Equipment</title>
+      <title>Pikson - Rent Camera Equipment</title>
 
-    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles.css">
 
-    <link rel="icon" href="./Images/bolt-solid 1.svg">
+      <link rel="icon" href="./Images/bolt-solid 1.svg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&display=swap" rel="stylesheet">
 
-</head>
-<!-- Make the navbar stick to the top. -->
-<header id="header">
-  <div id="home">
-    <img id="header-img" src="./Images/bolt-solid 1.svg" alt="bolt icon" width="20" href="#about">
-    <a id="name" href="#about">Pikson</a>
-  </div>
-  <nav id="nav-bar" class="center">
-    <ul>
-      <li><a class="nav-link" href="#">Lenses</a></li>
-      <li><a class="nav-link" href="#">Video Cameras</a></li>
-      <li><a class="nav-link" href="#">Accessories</a></li>
-      <li><a class="nav-link" href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-<body>
-  <!-- make the body into multiple flexboxes -->
-  <div id="blank_space"></div>
-  <div id="about">
+  </head>
+  <!-- Make the navbar stick to the top. -->
+  <header id="header">
+    <div id="home">
+      <img id="header-img" src="./Images/bolt-solid 1.svg" alt="bolt icon" width="20" href="#about">
+      <a id="name" href="#about">Pikson</a>
+    </div>
+    <nav id="nav-bar" class="center">
+      <ul>
+        <li><a class="nav-link" href="#">Lenses</a></li>
+        <li><a class="nav-link" href="#">Video Cameras</a></li>
+        <li><a class="nav-link" href="#">Accessories</a></li>
+        <li><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <!-- make the body into multiple flexboxes -->
+    <div id="blank_space"></div>
+    <div id="about">
 
-    <div class="main flex-row">
+      <div class="main flex-row">
 
-      <img id="hero-camera-upper" src="./Images/pexels-achim-f-3526906.jpg" alt="camrea" width="200">
+        <img id="hero-camera-upper" src="./Images/pexels-achim-f-3526906.jpg" alt="camrea" width="200">
 
-      <div class="main">
+        <div class="main">
+          
+          <div class="title">
+            <h1>Never buy </h1><h1>camera </h1><h1>accesories again.</h1>
+          </div>
+        
+          <p>With our service, you will never need to buy more accessories for your camera. You can rent our tripods, memory cards, gimbal, and professional video cameras.</p>
 
-        <div class="title">
-          <h1>Never buy </h1><h1>camera </h1><h1>accesories again.</h1>
-        </div>
-      
-        <p>With our service, you will never need to buy more accessories for your camera. You can rent our tripods, memory cards, gimbal, and professional video cameras.</p>
-
-        <div class="center">
-          <button type="button" id="learn-more-btn" class="btn" href="#">Learn more</button>
+          <div class="center-btn">
+            <button type="button" id="learn-more-btn" class="btn" href="#">Learn more</button>
+          </div>
 
           <div class="hero-camera-lower center">
           </div>
+
+          <div id="blue-light"></div>
+          <!-- Has to be wrapped up in 2 divs  to not overflow, its the only way i figured out -->
+          <div class="big-div">
+            <div class="red-dot">
+              <div id="red-light"></div>ß
+            </div>
+          </div>
           
         </div>
-
-        <div id="blue-light"></div>
-        <!-- Has to be wrapped up in 2 divs  to not overflow, its the only way i figured out -->
-        <div class="big-div">
-          <div class="red-dot">
-            <div id="red-light"></div>ß
-          </div>
-        </div>
-        
       </div>
     </div>
-  </div>
 
-  <!-- second element starts here -->
-  <div id="what-we-offer" class="center">
-    <h1>What we offer:</h1>
+    <!-- second element starts here -->
+    <div id="what-we-offer">
+      <h1>What we offer:</h1>
 
-    <div id="dark-box" class="center">
+      <div id="center-box">
+        <div id="dark-box">
 
-      <div id="img-video" class="img-card">
-        <div class="dark-overlay">
-          <h3 class="black">Video cameras</h3>
-        </div>
-      </div>
-
-      <div id="img-lens" class="img-card">
-          <div class="dark-overlay">
-            <h3 class="black">Lenses</h3>
-          </div>
-      </div>
-
-      <div id="img-accessories" class="img-card">
-          <div class="dark-overlay">
-            <h3 class="white">Accessories</h3>
-          </div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- third element starts here -->
-  <div id="lenses">
-
-    <div class="flex left">
-      <div class="content">
-
-        <h1 id="lens-title" class="cente title">Lenses</h1>
-
-        <div class="text">
-          <p>You can choose from a variety of our lenses and rent them for up to a month!</p>
-          <p>We provide lenses from every major brand, so suit your Canon, Nikon, Fujifilm, and Sony camera.</p>
-          <p>Our lenses are thoughtfully inspected before and after every customer to ensure the best quality. </p>
-          <p>Our staff will also explain how to use the lenses to prevent damaging your camera or our lens. </p>
-
-          <select name="lens-selection" id="lens-selection" class="center" aria-label="Here you can selet a lense">
-            <option value="">Select a lense...</option>
-            <option value="Canon">Canon</option>
-            <option value="Nikon">Nikon</option>
-            <option value="Sony">Sony</option>
-          </select>
-
-        </div>
-      </div>
-      <div id="lens-image" class="img-body"></div>
-    </div>
-  </div>
-
-  <!-- 4th element starts here -->
-  <div id="video-cameras">
-    <div class="flex right">
-      <div class="content">
-        <h1 class="title">Video cameras</h1>
-        <div class="text">
-          <p>You can choose from a variety of our video cameras and rent them for up to a month!</p>
-          <p>We provide video cameras from every major brand, from professional cameras such as Red to more consumer-friendly ones such as Canon, Nikon, Fujifilm, and Sony.
-          </p>
-          <p>Our video cameras are thoughtfully inspected before and after every customer to ensure the best quality. </p>
-          <p>Our staff will also explain how to use the lenses to prevent the video camera damage. </p>
-
-          <select name="video-selection" id="video-selection" aria-label="Here you can selet a lense">
-            <option value="">Select a Video Camera...</option>
-            <option value="RED">RED</option>
-            <option value="Canon">Canon</option>
-            <option value="Sony">Sony</option>
-            <option value="Blackmagic">Blackmagic</option>
-          </select>
-        </div>
-      </div>
-
-      <div id="camera-img" class="img-body"></div>
-      <!-- <img src="./Images/pexels-santschi-films-4243663.jpg" alt="video camera" width="200"> -->
-    </div>
-  </div>
-
-  <!-- 5th element starts here -->
-  <div id="accessories">
-    <div class="flex left">
-      <div class="content">
-        <h1 class="title">Accessories</h1>
-        <div class="text">
-          <p>We provide a wide range of accessories for your cameras and video cameras.</p>
-          <p>From external flashes, filters for your lenses for things such as memory cards, and hubs to connect them to even batteries.</p>
-          <p>We know some of you may need multiple batteries or external displays only a few times a year, so it's better to rent them than pay the cost of the new goods and then take care of them when not using them.</p>
-          <p>Newly we also rent gimbals and tripods for cameras, video cameras, and phones. </p>
-          
-          <div class="links">
-            <div class="div-links" href="#">
-              <a class="accessories-category">Memory Cards</a>
+          <div id="img-video" class="img-card">
+            <div class="dark-overlay">
+              <h3 class="black">Video cameras</h3>
             </div>
-            <div class="div-links" href="#">
-              <a class="accessories-category">Gimbals</a>
-            </div>
-            <div class="div-links" href="#">
-              <a class="accessories-category">Filters</a>
-            </div>
-            <div class="div-links" href="#">
-              <a class="accessories-category">Flashes</a>
+          </div>
+
+          <div id="img-lens" class="img-card">
+              <div class="dark-overlay">
+                <h3 class="black">Lenses</h3>
               </div>
-            <div class="div-links" href="#">
-              <a class="accessories-category">Batteries</a>
-            </div>
-            <div class="div-links" href="#">
-              <a class="accessories-category">Hubs</a>
-            </div>
-            <div class="div-links" href="#">
-              <a class="accessories-category">Tripods</a>
-            </div>
+          </div>
+
+          <div id="img-accessories" class="img-card">
+              <div class="dark-overlay">
+                <h3 class="white">Accessories</h3>
+              </div>
           </div>
 
         </div>
       </div>
 
-      <div id="gimball-img" class="img-body"></div>
-      <!-- <img src="./Images/DJI gimbal.png" alt="Gimbal" width="200"> -->
     </div>
-  </div>
 
- <!-- video here -->
-  <iframe src="https://www.youtube.com/embed/5bHaYAq19b4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- third element starts here -->
+    <div id="lenses">
 
- <!--contact form here -->
-  <div id="contact-us">
-    <div id="wine-ombre">
-      <h2>Couldn't find what you wanted?<br />or<br />Do you want to borrow more equipment at one?</h2>
-    </div>
-    
-    <div id="wine-div">
-      <div class="contact-box"> <!-- probably use grid? Wait itśs all designed on a grid, lol-->
+      <div class="flex left">
+        <div class="content">
 
-        <h1 id="contact">CONTACT US</h1>
+          <h1 id="lens-title" class="cente title">Lenses</h1>
 
-        <form class="contact" id="form" action="https://www.freecodecamp.com/email-submit">
+          <div class="text">
+            <p>You can choose from a variety of our lenses and rent them for up to a month!</p>
+            <p>We provide lenses from every major brand, so suit your Canon, Nikon, Fujifilm, and Sony camera.</p>
+            <p>Our lenses are thoughtfully inspected before and after every customer to ensure the best quality. </p>
+            <p>Our staff will also explain how to use the lenses to prevent damaging your camera or our lens. </p>
 
-          <div id="email-box">
-            <labe class="contact-text">Email:</labe>
-            <input id="email" type="email" name="email" placeholder="your.email@example.com">
+            <select name="lens-selection" id="lens-selection" class="center" aria-label="Here you can selet a lense">
+              <option value="">Select a lense...</option>
+              <option value="Canon">Canon</option>
+              <option value="Nikon">Nikon</option>
+              <option value="Sony">Sony</option>
+            </select>
+
           </div>
-
-          <div id="name-box">
-            <label class="contact-text">What should we call you?</label>
-            <input id="your-name" type="name" name="name" placeholder="John Snow">
-          </div>
-
-          <div id="text-box">
-            <label class="contact-text">What should we call you?</label>
-            <textarea id="subject" name="subject" placeholder="Write something..."></textarea>
-          </div>
-
-          <div class="send-btn">
-            <input id="submit" type="submit" value="SEND" class="btn">
-          </div>
-        </form>
-
+        </div>
+        <div id="lens-image" class="img-body"></div>
       </div>
     </div>
+
+    <!-- 4th element starts here -->
+    <div id="video-cameras">
+      <div class="flex right">
+        <div class="content">
+          <h1 class="title">Video cameras</h1>
+          <div class="text">
+            <p>You can choose from a variety of our video cameras and rent them for up to a month!</p>
+            <p>We provide video cameras from every major brand, from professional cameras such as Red to more consumer-friendly ones such as Canon, Nikon, Fujifilm, and Sony.
+            </p>
+            <p>Our video cameras are thoughtfully inspected before and after every customer to ensure the best quality. </p>
+            <p>Our staff will also explain how to use the lenses to prevent the video camera damage. </p>
+
+            <select name="video-selection" id="video-selection" aria-label="Here you can selet a lense">
+              <option value="">Select a Video Camera...</option>
+              <option value="RED">RED</option>
+              <option value="Canon">Canon</option>
+              <option value="Sony">Sony</option>
+              <option value="Blackmagic">Blackmagic</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="camera-img" class="img-body"></div>
+        <!-- <img src="./Images/pexels-santschi-films-4243663.jpg" alt="video camera" width="200"> -->
+      </div>
+    </div>
+
+    <!-- 5th element starts here -->
+    <div id="accessories">
+      <div class="flex left">
+        <div class="content">
+          <h1 class="title">Accessories</h1>
+          <div class="text">
+            <p>We provide a wide range of accessories for your cameras and video cameras.</p>
+            <p>From external flashes, filters for your lenses for things such as memory cards, and hubs to connect them to even batteries.</p>
+            <p>We know some of you may need multiple batteries or external displays only a few times a year, so it's better to rent them than pay the cost of the new goods and then take care of them when not using them.</p>
+            <p>Newly we also rent gimbals and tripods for cameras, video cameras, and phones. </p>
+            
+            <div class="links">
+              <div class="div-links" href="#">
+                <a class="accessories-category">Memory Cards</a>
+              </div>
+              <div class="div-links" href="#">
+                <a class="accessories-category">Gimbals</a>
+              </div>
+              <div class="div-links" href="#">
+                <a class="accessories-category">Filters</a>
+              </div>
+              <div class="div-links" href="#">
+                <a class="accessories-category">Flashes</a>
+                </div>
+              <div class="div-links" href="#">
+                <a class="accessories-category">Batteries</a>
+              </div>
+              <div class="div-links" href="#">
+                <a class="accessories-category">Hubs</a>
+              </div>
+              <div class="div-links" href="#">
+                <a class="accessories-category">Tripods</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="gimball-img" class="img-body"></div>
+        <!-- <img src="./Images/DJI gimbal.png" alt="Gimbal" width="200"> -->
+      </div>
+    </div>
+
+  <!-- video here -->
+    <iframe src="https://www.youtube.com/embed/5bHaYAq19b4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <!--contact form here -->
+    <div id="contact-us">
+      <div id="wine-ombre">
+        <h2>Couldn't find what you wanted?<br />or<br />Do you want to borrow more equipment at one?</h2>
+      </div>
+      
+      <div id="wine-div">
+        <div class="contact-box"> <!-- probably use grid? Wait itśs all designed on a grid, lol-->
+
+          <h1 id="contact">CONTACT US</h1>
+
+          <form class="contact" id="form" action="https://www.freecodecamp.com/email-submit">
+
+            <div id="email-box">
+              <labe class="contact-text">Email:</labe>
+              <input id="email" type="email" name="email" placeholder="your.email@example.com">
+            </div>
+
+            <div id="name-box">
+              <label class="contact-text">What should we call you?</label>
+              <input id="your-name" type="name" name="name" placeholder="John Snow">
+            </div>
+
+            <div id="text-box">
+              <label class="contact-text">What should we call you?</label>
+              <textarea id="subject" name="subject" placeholder="Write something..."></textarea>
+            </div>
+
+            <div class="send-btn">
+              <input id="submit" type="submit" value="SEND" class="btn">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>Webpage designed and coded by <a rel="noopener" href="https://twitter.com/TerkaCodes" target="_blank">@TerkaCodes.</a></p>
+    </div>
   </div>
 
-  <div id="footer">
-    <p>Webpage designed and coded by <a href="https://twitter.com/TerkaCodes" target="_blank">@TerkaCodes.</a></p>
-  </div>
-
-</body>
+  </body>
 </html>

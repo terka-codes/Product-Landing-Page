@@ -78,6 +78,7 @@ header {
     background-color: rgba(0, 0, 0, 0.75);
     padding: 6px 0 8px 0;
     z-index: 4;
+    -webkit-backdrop-filter: blir(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -103,7 +104,7 @@ h1 {
 }
 
 #nav-bar {
-    margin: 6px 15% 0 15%;
+    margin: 0 15% 0 15%;
 }
 
 #nav-bar ul {
@@ -113,7 +114,6 @@ h1 {
     justify-content: space-around;
     list-style: none;
     flex-wrap: wrap;
-    margin: 0 20px;
 }
 
 .nav-link {
@@ -156,14 +156,7 @@ p {
 .btn:hover {
     background-color: black;
     color: white;
-
 } 
-
-.center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .hero-camera-lower {
     margin: 30px 0;
@@ -174,12 +167,21 @@ p {
     background-position: center center;
 }
 
+#center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #what-we-offer h1 {
     text-transform: uppercase;
     margin-bottom: 32px;
 }
 
 #dark-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 92%;
     padding: 4% 0;;
     background: #111111;
@@ -252,6 +254,12 @@ p {
 
 .title {
     margin: 25px 0;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 select {
@@ -458,4 +466,24 @@ input[type=submit] {
     background-color: rgba(255, 255, 255, 0.884);
     text-decoration: none;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        width: 100%;
+        position: static;
+    }
+
+    body {
+        max-width: 1320px;
+        margin: auto;
+    }
+
+    #blank_space {
+        height: 1.1em;
+    }
+
+   .main {
+    display: flex;
+   }
 }
