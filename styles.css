@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* need to use these to to have more similar font apperance as in Figma === potential blog article? */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -12,13 +15,6 @@ body {
     max-width: 1320px;
     display: flex;
     flex-direction: column;
-    /* need to use these to to have more similar font apperance as in Figma === potential blog article? */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-#hero-camera-upper {
-    display: none;
 }
 
 #blank_space {
@@ -41,8 +37,8 @@ body {
     position: absolute;
     width: 80px;
     height: 153px;
-    left: 295px;
-    top: 354px;
+    left: 78%;
+    top: 430px;
 }
 
 .red-dot {
@@ -50,7 +46,7 @@ body {
     overflow: hidden;
     width: 100%;
     height: 153px;
-    background: rgba(223, 48, 88, 0.45);
+    background: rgba(223, 48, 88, 0.8);
     filter: blur(50px);
     z-index: 5;
     
@@ -130,6 +126,11 @@ h1 {
 .nav-link:hover {
     color: white;
     opacity: 0.45;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
 }
 
 p {
@@ -468,7 +469,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 740px) {
     header {
         height: 70px;
         position: fixed;
@@ -496,6 +497,13 @@ input[type=submit] {
         margin: 0;
     }
 
+    #blue-light {
+        height: 25vw;
+        width: 20vw;
+        left: 90vw;
+        top: 20vw;
+    }
+
     body {
         max-width: 1320px;
         margin: auto;
@@ -515,4 +523,43 @@ input[type=submit] {
    .main {
     display: flex;
    }
+   
+   #main-hero {
+    display: flex;
+    flex-direction: row-reverse;
+   }
+
+   #blue-light {
+    
+    }
+    .big-div {
+        position: absolute;
+        width: 80px;
+        height: 153px;
+        left: 295px;
+        top: 100vw;
+    }
+
+    .red-dot {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 153px;
+        background: rgba(223, 48, 88, 0.8);
+        filter: blur(50px);
+        z-index: 5;
+        
+    }
+
+    #red-light {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 60px;
+        right: -10px;
+        background: rgba(223, 48, 88, 0.65);
+        filter: blur(5px);
+        z-index: 6;
+    }
+
 }
