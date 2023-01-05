@@ -470,8 +470,30 @@ input[type=submit] {
 
 @media only screen and (min-width: 600px) {
     header {
+        height: 70px;
+        position: fixed;
+        top: 0;
         width: 100%;
-        position: static;
+        z-index: 4;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-container {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #home, #nav-bar > ul > li {
+        margin: 0 20px;
+    }
+
+    #nav-bar {
+        margin: 0;
     }
 
     body {
@@ -480,7 +502,14 @@ input[type=submit] {
     }
 
     #blank_space {
-        height: 1.1em;
+        height: 0px;
+    }
+
+    #about {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
    .main {
