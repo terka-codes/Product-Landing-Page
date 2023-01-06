@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     /* need to use these to to have more similar font apperance as in Figma === potential blog article? */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -146,12 +147,14 @@ p {
     padding: 8px 20px 9px 20px;
     border-radius: 60px;
     border: 1px solid white;
+    background-color: #FFFFFF;
     color: black;
     font-weight: 400;
     font-size: 22px;
     line-height: 25px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -253,8 +256,12 @@ p {
     color: white;
 }
 
-.title {
+.title-1 {
     margin: 25px 0;
+}
+
+.title-2 {
+    display: none;
 }
 
 .center-btn {
@@ -470,6 +477,7 @@ input[type=submit] {
 }
 
 @media only screen and (min-width: 740px) {
+
     header {
         height: 70px;
         position: fixed;
@@ -506,14 +514,45 @@ input[type=submit] {
 
     body {
         max-width: 1320px;
-        margin: auto;
+        overflow-x: hidden;
+    }
+
+    .big-div {
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        left: -10vw;
+        top: 70vh;
+    }
+
+    .red-dot {
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+        height: 90%;
+        background: rgba(223, 48, 88, 0.7);
+        filter: blur(70px);
+        z-index: 5;
+        
+    }
+
+    #red-light {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 0px;
+        right: -10px;
+        background: rgba(223, 48, 88, 0.9);
+        filter: blur(5px);
+        z-index: 6;
     }
 
     #blank_space {
-        height: 0px;
+        display: none
     }
 
     #about {
+        width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -521,45 +560,66 @@ input[type=submit] {
     }
 
    .main {
-    display: flex;
+     display: flex;
+     width: 100vw;
+     max-width: 1000px;
    }
    
    #main-hero {
-    display: flex;
-    flex-direction: row-reverse;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 1000px;
+        flex-grow: 1
    }
 
-   #blue-light {
-    
-    }
-    .big-div {
-        position: absolute;
-        width: 80px;
-        height: 153px;
-        left: 295px;
-        top: 100vw;
+   #hero-text {
+        max-width: 400px;
+        width: 40%;
+        min-width: 296px;
+   }
+
+   #hero-text > p {
+    margin: 20px 0;
+   }
+
+   .hero-camera-lower {
+        max-width: 600px;
+        width: 60%;
+        min-width: 444px;
+        min-height: 300px;
+        height: 130%;
+        max-height: 450px;
+        background-size: 900px auto;
+   }
+
+   .title-1 {
+        display: none;
     }
 
-    .red-dot {
-        position: relative;
-        overflow: hidden;
+   .title-2 {
+        display: unset;
+    }
+
+    #what-we-offer {
+        margin: auto;
+        width: 90vw;
+        max-width: 1000px;
+    }
+
+    #center-box {
+        margin: 50px 0 200px 0;
+    }
+
+    #dark-box {
+        flex-direction: row;
         width: 100%;
-        height: 153px;
-        background: rgba(223, 48, 88, 0.8);
-        filter: blur(50px);
-        z-index: 5;
-        
+        max-width: 1000px;
+        padding: 35px 15px;    
     }
 
-    #red-light {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        top: 60px;
-        right: -10px;
-        background: rgba(223, 48, 88, 0.65);
-        filter: blur(5px);
-        z-index: 6;
+    .img-card {
+        margin: 0 15px;
     }
 
 }
