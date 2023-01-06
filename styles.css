@@ -8,6 +8,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.blank {
+    display: none;
+}
+
 body {
     background-color: black;
     color: white;
@@ -177,6 +181,10 @@ p {
     align-items: center;
 }
 
+.flex-card {
+    margin-top: 100px;
+}
+
 #what-we-offer h1 {
     text-transform: uppercase;
     margin-bottom: 32px;
@@ -320,7 +328,7 @@ select {
     width: calc(100% - 30px);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly
+    justify-content: center;
 }
 
 .accessories-category {
@@ -580,7 +588,14 @@ input[type=submit] {
    }
 
    #hero-text > p {
-    margin: 20px 0;
+        margin: 20px 0;
+        font-size: 26px;
+   }
+
+   .btn {
+        font-size: 32px;
+        margin: 5px 0;
+        padding: 15px 25px 18px 25px;
    }
 
    .hero-camera-lower {
@@ -601,14 +616,25 @@ input[type=submit] {
         display: unset;
     }
 
+    h1 {
+        font-size: 44px;
+    }
+
+    .blank {
+        display: unset;
+        display: inline-block;
+        height: 100px;
+        width: 10px;
+    }
+
     #what-we-offer {
-        margin: auto;
+        margin: 100px auto;
         width: 90vw;
         max-width: 1000px;
     }
 
     #center-box {
-        margin: 50px 0 200px 0;
+        margin: 50px 0;
     }
 
     #dark-box {
@@ -620,6 +646,51 @@ input[type=submit] {
 
     .img-card {
         margin: 0 15px;
+    }
+
+    .flex-card {
+        margin: 100px auto;
+        width: 90vw;
+        max-width: 1000px;
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .flex-card > .content {
+        width: 45%;
+    }
+
+    .flex-card > .content > h1 {
+        text-align: left;
+        font-size: 62px;
+    }
+
+    .flex-card > .content > text > p {
+        font-size: 22px;
+    }
+
+    select {
+        font-size: 26px;
+        padding: 10px;
+        height: 2em;
+    }
+
+    .flex-card > .img-body {
+        transform: scale(1.6);
+    }
+
+    #camera-img {
+        transform: matrix(-1.6, 0, 0, 1.6, 0, 0);
+    }
+
+    #video-cameras > .flex-card {
+        flex-direction: row-reverse;
+    }
+
+    .accessories-category {
+        font-size: 20px;
+        padding: 4px 8px 6px 8px;
+
     }
 
 }
