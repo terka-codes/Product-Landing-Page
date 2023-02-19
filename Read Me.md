@@ -1,7 +1,5 @@
 # Product landing page project
 
-https://user-images.githubusercontent.com/107133029/206278617-660fc266-4982-40f8-9d3a-cf92833182f2.mp4
-
 ## Welcome! 👋
 
 This is my custom design in Figma for desktop and mobile + made into code
@@ -9,6 +7,8 @@ This is my custom design in Figma for desktop and mobile + made into code
 ## My process
 
 For the website design, I chose a modern dark theme and a hero landing page format.
+
+https://user-images.githubusercontent.com/107133029/206278617-660fc266-4982-40f8-9d3a-cf92833182f2.mp4
 
 The design features a minimalist look that appears modern and is suitable for the business sector it represents. The fictional store specializes in renting cameras, camcorders, and accessories.
 
