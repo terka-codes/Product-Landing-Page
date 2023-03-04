@@ -4,6 +4,8 @@
 
 This is my custom design in Figma for desktop and mobile + made into code
 
+[LIVE DEMO HERE](https://terka-codes.github.io/Product-Landing-Page/) 👈
+
 ## My process
 
 For the website design, I chose a modern dark theme and a hero landing page format.
